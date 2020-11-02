@@ -18,7 +18,7 @@ public class demo1 {
             //0.注册驱动
             Class.forName("com.mysql.cj.jdbc.Driver");
             //1.连接数据库对象 （要是连接本地的ip和端口可以在url中省略ip和端口）
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db1?serverTimezone=GMT%2B8","root","guolongkai@123");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db1?serverTimezone=GMT%2B8","root","guolongkai");
             //2.定义sql语句
             String sql = "insert  into stu (id,name,age) values (3,'凯哥',5)";
 //            String sql ="update course set id = 2";
