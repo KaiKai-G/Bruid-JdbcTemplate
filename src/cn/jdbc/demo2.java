@@ -12,7 +12,7 @@ public class demo2 {
         ResultSet resultSet = null;
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/db1?serverTimezone=GMT%2B8","root","guolongkai@123");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/db1?serverTimezone=GMT%2B8","root","guolongkai");
             String sql = "select distinct * from stu";
             state = conn.createStatement();
             //executeQuery 执行的是查询语句
