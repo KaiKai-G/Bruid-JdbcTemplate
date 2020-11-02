@@ -20,7 +20,7 @@ public class demo3 {
         List<emp> list = null;//存储数据对象的集合
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/db1?serverTimezone=GMT%2B8","root","guolongkai@123");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/db1?serverTimezone=GMT%2B8","root","guolongkai");
             String sql = "select * from stu";
             state = conn.createStatement();
             result = state.executeQuery(sql);
